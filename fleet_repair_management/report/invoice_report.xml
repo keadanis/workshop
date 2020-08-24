@@ -3,7 +3,8 @@
 	<data>
         <!-- Inherit Account Invoice Reeport -->
 		<template id="report_account_invoice_inherit" inherit_id="account.report_invoice_document">
-			<xpath expr="//div[@class='page']/table[@name='invoice_line_table']"
+            <xpath expr="//table[@name='invoice_line_table']"
+			<!-- xpath expr="//div[@class='page']/table[@name='invoice_line_table']" -->
 				position="replace">
 				<table class="table table-sm" name="invoice_line_table">
                  <thead>
